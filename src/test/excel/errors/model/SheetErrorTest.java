@@ -83,7 +83,7 @@ public class SheetErrorTest {
 	
 	@Test
 	public void whenCallAnyMethodWithReturnedDrawingValue(){
-		assertThat(errorSheet.createDrawingPatriarch(),instanceOf(DrawingError.class)); //nueva clase hay que hacer el test
+		assertThat(errorSheet.createDrawingPatriarch(),instanceOf(DrawingError.class)); 
 	}
 	
 	@Test

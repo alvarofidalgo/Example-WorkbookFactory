@@ -17,7 +17,7 @@ public class RedirectStandardError {
 		  System.setErr(new PrintStream(errContent));
 		  
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
