@@ -1,4 +1,4 @@
-package mocks.excel.exceptions;
+package mocks.excel.exceptions.mocks;
 
 import org.mockito.Mockito;
 
