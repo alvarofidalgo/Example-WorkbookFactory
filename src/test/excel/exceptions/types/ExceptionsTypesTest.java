@@ -1,7 +1,7 @@
 package test.excel.exceptions.types;
 
 import static excel.exceptions.types.ExceptionsTypes.*;
-import static mocks.excel.exceptions.mocks.ExceptionsMock.*;
+import static mocks.excel.exceptions.ExceptionsMock.*;
 import static org.junit.Assert.*;
 
 import org.apache.poi.POIXMLException;
@@ -18,7 +18,7 @@ public class ExceptionsTypesTest {
 	public void whenCallIgnoreCauseOfficeXmlFileExceptionAndPOIXMLExceptionAndExceptionTypeIsOfficeXmlFile(){
 
 		PrinterException printerException = ignoreCauseOfficeXmlFileExceptionAndPOIXMLException(
-				                                     getExceptionWithCausedException(Exception.class,OfficeXmlFileException.class));
+				                         getExceptionWithCausedRealException(Exception.class,new OfficeXmlFileException(null)));
 		printerException.printStackTrace();
 		assertTrue(verifiCallPrintStactTraceParameterTimes(0));
 	}

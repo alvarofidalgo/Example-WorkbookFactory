@@ -3,7 +3,7 @@ package excel.errors.model;
 import org.apache.poi.ss.usermodel.BorderFormatting;
 
 public class BorderFormattingError implements BorderFormatting {
-
+	
 	
 	public short getBorderBottom() {
 		

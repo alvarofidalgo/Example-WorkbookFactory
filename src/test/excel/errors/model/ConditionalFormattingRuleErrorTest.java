@@ -56,5 +56,4 @@ public class ConditionalFormattingRuleErrorTest {
 		assertEquals(errorConditionalFormattingRule.getFormula1(),"");
 		assertEquals(errorConditionalFormattingRule.getFormula1(),"");
 	}
-
 }

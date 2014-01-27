@@ -7,8 +7,9 @@ import org.junit.Test;
 import excel.exceptions.strategys.IgnorableExceptions;
 import excel.exceptions.strategys.IgnoreExceptionCause;
 
-import static mocks.excel.exceptions.mocks.ExceptionsMock.*;
+import static mocks.excel.exceptions.ExceptionsMock.*;
 import static org.junit.Assert.*;
+
 
 public class IgnoreExceptionCauseTest {
 	
@@ -21,7 +22,8 @@ public class IgnoreExceptionCauseTest {
 	
 	@Test
 	public void whenCauseExceptionIsEqualsThatConstructorClass(){
-		assertTrue(ignorableExceptionCause.isIgnorable(getExceptionWithCausedException(Exception.class,OfficeXmlFileException.class)));
+		
+		assertTrue(ignorableExceptionCause.isIgnorable(getExceptionWithCausedRealException(Exception.class,new OfficeXmlFileException(null))));
 	}
 	
 	@Test

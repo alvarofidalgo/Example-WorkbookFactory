@@ -6,9 +6,9 @@ import org.junit.Test;
 
 import excel.errors.model.WorkbookError;
 import excel.reflect.WorkbookCreator;
+import static test.operations.commons.OperationsInputStream.*;
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
-import static test.operations.commons.OperationsInputStream.*;
 
 
 public class WorkbookCreatorTest {

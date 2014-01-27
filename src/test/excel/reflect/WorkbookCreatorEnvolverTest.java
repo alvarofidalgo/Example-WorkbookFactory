@@ -12,9 +12,9 @@ import org.junit.Test;
 import excel.exceptions.PrinterException;
 import excel.reflect.WorkbookCreatorEnvolver;
 import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
 import static test.operations.commons.OperationsInputStream.*;
 import static test.operations.commons.RedirectStandardError.*;
+import static org.hamcrest.CoreMatchers.*;
 
 
 public class WorkbookCreatorEnvolverTest {

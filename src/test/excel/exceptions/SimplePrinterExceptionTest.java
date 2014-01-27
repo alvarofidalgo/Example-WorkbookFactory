@@ -1,6 +1,6 @@
 package test.excel.exceptions;
 
-import static mocks.excel.exceptions.mocks.ExceptionsMock.*;
+import static mocks.excel.exceptions.ExceptionsMock.*;
 import static org.junit.Assert.*;
 
 import org.apache.poi.poifs.filesystem.OfficeXmlFileException;
