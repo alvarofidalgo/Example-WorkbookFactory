@@ -25,7 +25,7 @@ import excel.errors.model.RowError;
 import excel.errors.model.SheetConditionalFormattingError;
 import excel.errors.model.SheetError;
 import excel.errors.model.WorkbookError;
-import excel.errors.model.iterators.RowIteratorError;
+import excel.errors.model.iterators.ErrorRowIterator;
 
 public class SheetErrorTest {
 	
@@ -83,7 +83,7 @@ public class SheetErrorTest {
 	
 	@Test
 	public void whenCallAnyMethodWithReturnedDrawingValue(){
-		assertThat(errorSheet.createDrawingPatriarch(),instanceOf(DrawingError.class)); 
+		assertThat(errorSheet.createDrawingPatriarch(),instanceOf(DrawingError.class)); //nueva clase hay que hacer el test
 	}
 	
 	@Test
@@ -155,8 +155,8 @@ public class SheetErrorTest {
 	
 	@Test
 	public void whenCallAnyMethodWithReturnedIteratorValue(){
-		assertThat(errorSheet.iterator(),instanceOf(RowIteratorError.class)); 
-		assertThat(errorSheet.rowIterator(),instanceOf(RowIteratorError.class));
+		assertThat(errorSheet.iterator(),instanceOf(ErrorRowIterator.class)); 
+		assertThat(errorSheet.rowIterator(),instanceOf(ErrorRowIterator.class));
 	}
 	
 	@Test

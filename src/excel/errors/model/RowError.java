@@ -8,20 +8,20 @@ import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 
-import excel.errors.model.iterators.CellteratorError;
+import excel.errors.model.iterators.ErrorCellterator;
 
 public class RowError implements Row {
 
 
 	public Iterator<Cell> iterator() {
 		
-		return new CellteratorError<Cell>();
+		return new ErrorCellterator<Cell>();
 	}
 
 	
 	public Iterator<Cell> cellIterator() {
 		
-		return new CellteratorError<Cell>();
+		return new ErrorCellterator<Cell>();
 	}
 
 	

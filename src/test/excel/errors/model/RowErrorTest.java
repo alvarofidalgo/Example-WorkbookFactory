@@ -9,7 +9,7 @@ import excel.errors.model.CellError;
 import excel.errors.model.CellStyleError;
 import excel.errors.model.RowError;
 import excel.errors.model.SheetError;
-import excel.errors.model.iterators.CellteratorError;
+import excel.errors.model.iterators.ErrorCellterator;
 
 import static mocks.excel.ganeratevalues.any.AnyValues.*;
 import static org.junit.Assert.*;
@@ -62,8 +62,8 @@ public class RowErrorTest {
 
 	@Test
 	public void whenCallAnyMethodWithReturnedIteratorValue(){
-		assertThat(errorrow.cellIterator(),instanceOf(CellteratorError.class));
-		assertThat(errorrow.iterator(),instanceOf(CellteratorError.class));
+		assertThat(errorrow.cellIterator(),instanceOf(ErrorCellterator.class));
+		assertThat(errorrow.iterator(),instanceOf(ErrorCellterator.class));
 	}
 	
 }

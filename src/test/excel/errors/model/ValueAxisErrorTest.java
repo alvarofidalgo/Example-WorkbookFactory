@@ -9,15 +9,15 @@ import org.apache.poi.ss.usermodel.charts.AxisPosition;
 import org.junit.Before;
 import org.junit.Test;
 
-import excel.errors.model.ValueAxisError;
+import excel.errors.model.ZErrorValueAxis;
 
 public class ValueAxisErrorTest {
 	
-	private ValueAxisError errorValueAxis;
+	private ZErrorValueAxis errorValueAxis;
 	
 	@Before
 	public void setUp(){
-		errorValueAxis = new ValueAxisError();	
+		errorValueAxis = new ZErrorValueAxis();	
 	}
 	
 	@Test

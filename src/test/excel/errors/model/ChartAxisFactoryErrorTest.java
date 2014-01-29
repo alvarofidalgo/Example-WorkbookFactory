@@ -7,7 +7,7 @@ import org.junit.Test;
 
 
 import excel.errors.model.ChartAxisFactoryError;
-import excel.errors.model.ValueAxisError;
+import excel.errors.model.ZErrorValueAxis;
 
 import static mocks.excel.ganeratevalues.any.AnyValues.*;
 import static org.junit.Assert.*;
@@ -27,7 +27,7 @@ public class ChartAxisFactoryErrorTest {
 	
 	@Test
 	public void whenCallCreateValueAxis(){
-		assertThat(errorChartFactory.createValueAxis((AxisPosition) anyObject()),instanceOf(ValueAxisError.class));
+		assertThat(errorChartFactory.createValueAxis((AxisPosition) anyObject()),instanceOf(ZErrorValueAxis.class));
 	}
 
 }

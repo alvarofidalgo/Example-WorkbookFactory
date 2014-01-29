@@ -12,7 +12,7 @@ import org.junit.Test;
 
 import excel.errors.model.CellError;
 import excel.errors.model.CellRangeError;
-import excel.errors.model.iterators.CellteratorError;
+import excel.errors.model.iterators.ErrorCellterator;
 
 
 public class CellRangeErrorTest {
@@ -54,7 +54,7 @@ public class CellRangeErrorTest {
 	
 	@Test
 	public void whenCallAnyMethodReturnedIteratorValue(){
-		assertThat(errorCellRange.iterator(),instanceOf(CellteratorError.class));
+		assertThat(errorCellRange.iterator(),instanceOf(ErrorCellterator.class));
 	}
 
 }

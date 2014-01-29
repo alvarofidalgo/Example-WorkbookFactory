@@ -5,13 +5,13 @@ import java.util.Iterator;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellRange;
 
-import excel.errors.model.iterators.CellteratorError;
+import excel.errors.model.iterators.ErrorCellterator;
 
 @SuppressWarnings("unchecked")
 public class CellRangeError<C extends Cell> implements CellRange<C> {
 
 	
-    
+ 
 	public C getCell(int arg0, int arg1) {
 		
 		return (C) new CellError();
@@ -58,7 +58,7 @@ public class CellRangeError<C extends Cell> implements CellRange<C> {
 
 	public Iterator<C> iterator() {
 
-		return (Iterator<C>) new CellteratorError<Cell>();
+		return (Iterator<C>) new ErrorCellterator<Cell>();
 	}
 
 	

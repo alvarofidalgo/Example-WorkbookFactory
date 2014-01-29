@@ -13,11 +13,10 @@ public class ChartDataSourceError<T> implements ChartDataSource<T> {
 	}
 
 
-	
 	@SuppressWarnings("unchecked")
 	public T getPointAt(int arg0) {
 
-		return  (T) new NumberError();
+		return (T) new NumberError();
 	}
 
 

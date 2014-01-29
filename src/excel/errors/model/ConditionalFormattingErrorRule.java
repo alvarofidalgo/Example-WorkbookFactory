@@ -6,7 +6,6 @@ import org.apache.poi.ss.usermodel.FontFormatting;
 import org.apache.poi.ss.usermodel.PatternFormatting;
 
 
-
 public class ConditionalFormattingErrorRule implements
 		ConditionalFormattingRule {
 

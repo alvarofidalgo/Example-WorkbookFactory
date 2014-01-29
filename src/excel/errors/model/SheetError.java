@@ -20,7 +20,7 @@ import org.apache.poi.ss.usermodel.SheetConditionalFormatting;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.util.CellRangeAddress;
 
-import excel.errors.model.iterators.RowIteratorError;
+import excel.errors.model.iterators.ErrorRowIterator;
 
 
 public class SheetError implements Sheet {
@@ -28,7 +28,7 @@ public class SheetError implements Sheet {
 	
 	public Iterator<Row> iterator() {
 		
-		return new RowIteratorError<Row>();
+		return new ErrorRowIterator<Row>();
 	}
 
 	
@@ -406,7 +406,7 @@ public class SheetError implements Sheet {
 	
 	public Iterator<Row> rowIterator() {
 		
-		return new RowIteratorError<Row>();
+		return new ErrorRowIterator<Row>();
 	}
 
 	

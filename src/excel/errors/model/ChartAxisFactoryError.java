@@ -9,7 +9,7 @@ public class ChartAxisFactoryError implements ChartAxisFactory {
 
 	public ValueAxis createValueAxis(AxisPosition arg0) {
 
-		return new ValueAxisError();
+		return new ZErrorValueAxis();
 	}
 
 }

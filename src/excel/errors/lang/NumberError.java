@@ -3,9 +3,9 @@ package excel.errors.lang;
 
 public class NumberError extends Number {
 
-	private static final long serialVersionUID = 1L;
-	
 
+
+	private static final long serialVersionUID = 1L;
 
 	public double doubleValue() {
 
