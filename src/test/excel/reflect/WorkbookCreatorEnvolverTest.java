@@ -58,7 +58,7 @@ public class WorkbookCreatorEnvolverTest {
 			 fail("");
 		 }catch (PrinterException e){
 			 e.printStackTrace();
-		    assertEquals(getResultError(),beforeError);
+		     assertEquals(getResultError(),beforeError);
 		 }
 	}
 	
